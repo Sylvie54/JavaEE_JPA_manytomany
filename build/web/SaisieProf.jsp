@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <!-- on inclut le contenu HTML de l'entête standard (navbar) de l'application et les métadonnées -->   
-    <%@ include file="Header.html" %>
+    <%@ include file="Header.jsp" %>
     
     <main>
      <h3>saisie prof</h3>

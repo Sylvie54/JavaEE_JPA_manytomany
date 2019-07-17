@@ -13,7 +13,7 @@
     </head>
     <body>
 <!-- on inclut le contenu HTML de l'entête standard (navbar) de l'application et les métadonnées -->             
-        <%@ include file="Header.html" %>
+        <%@ include file="Header.jsp" %>
         <main>
         <h3>Liste des Professeurs</h3>
         <p class='jaune'> ${ requestScope.message }  </p>
@@ -35,7 +35,7 @@
         <br> 
         </main>
         <aside>
-            <div class="image"> <img id="monimage" src="professeur.jpg"  alt="salle de cours"/>
+            <div class="image"> <img id="monimage" src="./images/professeur.jpg"  alt="salle de cours"/>
             </div>
         </aside>
     </body>

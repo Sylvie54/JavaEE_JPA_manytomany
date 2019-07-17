@@ -8,7 +8,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>   
 <!DOCTYPE html>
 <html>
-        <%@ include file="Header.html" %>
+        <%@ include file="Header.jsp" %>
     
         <main>
         <br>    
@@ -16,7 +16,7 @@
         <br>
         <h3>Gestion d'une session de formation</h3>
          <p class='jaune'> ${ requestScope.message }  </p>
-           <div class="image"> <img id="classeCours" src="classeCoursHumour.png"  alt="une salle de cours"/>
+           <div class="image"> <img id="classeCours" src="./images/classeCoursHumour.png"  alt="une salle de cours"/>
            </div> 
         </main>
     
@@ -25,7 +25,7 @@
     <section>  </section>
     <article>
                 <section> 
-                    <div class="image"> <img id="monimage" src="mer.png" width="259" height="194" alt="mer"/>
+                    <div class="image"> <img id="monimage" src="./images/mer.png" width="259" height="194" alt="mer"/>
                     </div>    
                   <div id="PostIt"></div>  
                 </section>
@@ -35,5 +35,5 @@
 </footer>
 </body>        
        <%@ include file="footer.html" %>
-       <script src="jsIndex.js"></script>
+       <script src="./javascript/jsIndex.js"></script>
 </html>
