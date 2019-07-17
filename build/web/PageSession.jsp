@@ -45,7 +45,10 @@
          
        
         </main>
-           <aside></aside>
+        <aside>
+            <div class="image"> <img id="monimage" src="sallecours.jpg"  alt="salle de cours"/>
+            </div>
+        </aside>
           
     </body>
       <%@ include file="footer.html" %>

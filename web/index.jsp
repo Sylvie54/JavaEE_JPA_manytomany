@@ -35,4 +35,5 @@
 </footer>
 </body>        
        <%@ include file="footer.html" %>
+       <script src="jsIndex.js"></script>
 </html>

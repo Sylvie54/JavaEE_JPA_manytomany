@@ -34,7 +34,10 @@
         </c:forEach> 
         <br> 
         </main>
-        <aside></aside>
+        <aside>
+            <div class="image"> <img id="monimage" src="professeur.jpg"  alt="salle de cours"/>
+            </div>
+        </aside>
     </body>
     <!-- on inclut le contenu HTML du pied de page standard de l'application --> 
     <%@ include file="footer.html" %>
