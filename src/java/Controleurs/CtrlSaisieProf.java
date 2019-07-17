@@ -38,8 +38,8 @@ public class CtrlSaisieProf extends HttpServlet implements ICommand  {
         EntityTransaction utx = em.getTransaction();
        
         //   List listprof = em.createQuery("select p from Professeur p where p.id = 1").getResultList();
-        List listSessions = em2.createQuery("select c from Session c ").getResultList();
-        request.setAttribute("listSessions",listSessions);  
+        List listMatieres = em2.createQuery("select m from Matiere m ").getResultList();
+        request.setAttribute("listeMatieres",listMatieres);  
         
         String message= "";
                  // test si le parametre "NomProf" est dans la liste des paramètres, sinon c'est le premier passage donc on ne fait rien    
@@ -50,8 +50,8 @@ public class CtrlSaisieProf extends HttpServlet implements ICommand  {
             String prenomProf  = (String) request.getParameter("PrenomProf");
             // recup valeur sélectionnée de la combobox 
             
-            String classeProf = (String) request.getParameter("sessions");
-            int numSession = Integer.parseInt(classeProf);
+            String matiere = (String) request.getParameter("matiere");
+            int numMatiere = Integer.parseInt(matiere);
             
             try
                 {

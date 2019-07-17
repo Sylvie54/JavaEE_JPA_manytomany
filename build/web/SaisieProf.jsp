@@ -4,7 +4,7 @@
     Author     : Utilisateur
 --%>
 <%@page import="Classes.Session"%> 
-
+<%@page import="Classes.Matiere"%> 
 <!DOCTYPE html>
 <html>
     <!-- on inclut le contenu HTML de l'entête standard (navbar) de l'application et les métadonnées -->   
@@ -18,10 +18,10 @@
         Nom du Professeur : <input type="text" name="NomProf" id="NomProf" value="${ requestScope.ancnom }" size="50" /><br>
         Prénom du Professeur : <input type="text" name="PrenomProf" id="PrenomProf" value="${ requestScope.ancprenom }" size="50" /><br>
         <br>
-        <p>Choisissez une session : 
-        <select id="sessions" name = "sessions">
-            <c:forEach var="session" begin="0" items="${requestScope.listSessions}">
-                <option value="${ session.id }">  ${ session.nom }  </option> 
+        <p>Choisissez une matière : 
+        <select id="matiere" name = "matiere">
+            <c:forEach var="matiere" begin="0" items="${requestScope.listeMatieres}">
+                <option value="${ matiere.id }">  ${ matiere.nom }  </option> 
             </c:forEach> 
         </select>
         </p>
