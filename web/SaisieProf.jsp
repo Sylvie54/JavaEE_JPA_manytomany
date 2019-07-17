@@ -11,9 +11,9 @@
     <%@ include file="Header.html" %>
     
     <main>
-    <h3>saisie prof</h3>
-    <p class='jaune'> ${ requestScope.message }  ${ requestScope.nom }  ${ requestScope.prenom }  </p>
-    <form name="SaisieProf" method="post">
+     <h3>saisie prof</h3>
+     <p class='jaune'> ${ requestScope.message }  ${ requestScope.nom }  ${ requestScope.prenom }  </p>
+     <form name="SaisieProf" method="post">
         <input type="hidden" name="cmd" id="cmd" value="page4" />
         Nom du Professeur : <input type="text" name="NomProf" id="NomProf" value="${ requestScope.ancnom }" size="50" /><br>
         Prénom du Professeur : <input type="text" name="PrenomProf" id="PrenomProf" value="${ requestScope.ancprenom }" size="50" /><br>
@@ -27,10 +27,10 @@
         </p>
         <p>
         <input type="submit" value="Valider" name="BtnSubmit" /> </p>
-    </form>
-        </main>
+     </form>
+    </main>
     <aside></aside>
     </body>
-      <!-- on inclut le contenu HTML du pied de page standard de l'application --> 
-     <%@ include file="footer.html" %>
+     <!-- on inclut le contenu HTML du pied de page standard de l'application --> 
+    <%@ include file="footer.html" %>
 </html>
